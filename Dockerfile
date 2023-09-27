@@ -20,6 +20,9 @@ RUN echo "export LS_OPTIONS='--color=auto'" >> ~/.bashrc && \
 #   alias ls='ls $LS_OPTIONS' && \
 #   source /etc/bash.bashrc; source ~/.bashrc
 
+# Setting up ssh ans ssh-keygen
+RUN apt install ssh -y --no-install-recommends 
+
 # Installing nano and vim
 RUN apt install nano vim -y --no-install-recommends
     
